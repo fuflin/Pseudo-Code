@@ -1,0 +1,76 @@
+Donnez les valeurs des variables
+
+exo 1:
+
+Début
+    A <- 1 
+    B <- A + 3
+    A <- 3
+Fin 
+
+A = 3   B = 4
+--------------------------------------------------------------------------------
+exo 2:
+
+Début
+    A <- 5
+    B <- 3
+    C <- A + B
+    A <- 2
+    C <- B - A
+Fin
+
+A = 2   B = 3   C = 1
+--------------------------------------------------------------------------------
+exo 3:
+
+Début
+    A <- 5
+    B <- A + 4
+    A <- A + 1
+    B <- A - 4
+Fin
+
+A = 6   B = 2
+--------------------------------------------------------------------------------
+exo 4:
+
+Début
+    A <- 3
+    B <- 10
+    C <- A + B
+    B <- A + B
+    A <- C
+Fin
+
+A = 13  B = 13  C = 13
+--------------------------------------------------------------------------------
+exo 5:
+
+Début
+    A <- 5
+    B <- 2
+    A <- B
+    B <- A
+Fin
+
+A = 2   B = 2
+--------------------------------------------------------------------------------
+exo 6:
+
+écrire un algorithme permettant d'échanger les valeurs de 2 variables A et base
+
+Variable A, B, C en entier
+
+Début
+    A <- 2
+    B <- 5
+    C <- A
+    A <- B
+    B <- C
+Fin
+--------------------------------------------------------------------------------
+exo 7:
+
+variante de l'exercice précedent on dispose de 3 variables A, B, et C. Ecrire un algorithme transférant à B la valeur de A, à C la valeur de B e à A la valeur de C.
+

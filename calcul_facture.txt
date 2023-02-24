@@ -1,0 +1,95 @@
+Problématique: 
+
+    Afficher le montant brut, la remise, les frais de livraisons, le montant Net HT, le montant de la TVA, le montant TTC et le montant NET à payer connaissant la quantité, le prix unitaire, le taux de remise, les frais de livraison suivant le code de livraison et le taux de TVA.
+
+Données connues:
+
+    Taux de remise ; 10% si accordée
+    Montant TVA : 19,6%
+    Frais de livraison :
+        - 10€ si code 1 
+        - 20€ si code 2 
+        - 30€ si code 3
+        - Offert si code 4
+
+Travail à réaliser: 
+
+    Concevoir un programme permettant de calculer et d'afficher ces montants.
+
+
+variables
+
+    var bool_remise en booleen
+    var montant_remise en simple
+    var montant_HT en simple
+    var montant_net_HT
+    var quantite en entier
+    var montant_liv en simple
+    var montant_total_HT en simple <- 0
+    var montant_TTC en simple 
+    var montant_TVA en simple
+    var montant_net en simple
+    var montant_brut en simple
+    var code_liv en entier
+
+
+constantes
+
+    const taux_remise en numerique <- 0.10
+    const taux_TVA en numerique <- 0.196
+    const frais_code en entier (1 à 4)
+        frais_code(1)<- 10
+        frais_code(2)<- 20
+        frais_code(3)<- 30
+        frais_code(4)<- 0
+    
+
+Début
+
+    Ecrire "scannez article"
+    Lire montant_HT
+
+    Tant que montant_HT <> 0
+
+        Ecrire "Donnez la quantité"
+        Lire quantite
+
+        montant_total_HT <- montant_total_HT + (montant_HT * quantite)
+
+        Ecrire "scannez article"
+        Lire montant_HT
+
+    Fin Tant que
+
+    Ecrire "Y a t'il une remise"
+    Lire bool_remise
+
+    Si bool_remise = true Alors 
+
+        montant_remise = montant_total_HT * taux_remise
+
+    Sinon
+
+        montant_remise <- 0
+
+    Fin si
+
+    Ecrire "Donnez le code de livraison"
+    Lire code_liv
+
+    montant_liv <- frais_code(code_liv)
+
+    montant_net_HT <- montant_total_HT - montant_remise
+    montant_TVA <- montant_total_HT * taux_TVA
+    montant_TTC <- montant_net_HT + montant_TVA
+    montant_net <- montant_TTC + montant_liv
+
+    Ecrire "les frais de livraisons sont de:" montant_liv
+    
+    Ecrire "Le montant brut est de :" montant_total_HT
+    Ecrire "La remise est de :" montant_remise
+    Ecrire "le montant de la TVA est de:" montant_TVA
+    Ecrire "Le montant TTC est de:" montant_TTC
+    Ecrire "Le montant net à payer avec livraison est de:" montant_net
+
+Fin

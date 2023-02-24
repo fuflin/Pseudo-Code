@@ -1,0 +1,50 @@
+Problématique: 
+
+    Calculer et afficher le salaire d'un commercial suivant ses primes de transport et de CA, ainsi que son salaire de base
+
+Données connues:
+
+    Prime sur CA: 2% du CA si le CA est inférieur à 50000€
+    Prime sur CA: 4% du CA si le CA est supérieur à 50000€
+    Remboursement kilométrique: 0.26€
+
+Travail à réalisé:
+
+    Concevoir un programme permettant de calculer et d'afficher ce montant.
+
+
+image :
+
+salaire sans prime = salairebase
+
+salaire CA<50K€
+salaire base + 2% de 50K€ (+ n(km)*primekm)
+
+salaire CA>50K€
+salaire base + 4% de 50K€ (+ n(km)*primekm)
+
+variable 
+    salaireBase, salaireTotal, nbKm, CA, prime1, prime2 en entier
+    primekm en décimal
+    
+
+Début
+
+    CA <- 0,    nbkm <- 0,
+    prime1 <- 1000,  prime2 <- 2000,  primekm <- 0.26
+
+        Si CA > 50K
+            Alors salaireTotal <- salaireBase + prime2 + (nbKm*primekm)
+                Ecrire "Voila le salaire pour le CA au dessus de 50K€"
+        
+        Sinon si CA < 50K
+            Alors salaireTotal <- salaireBase + prime1 + (nbKm*primekm)
+                Ecrire "Voila le salaire pour le CA en dessous de 50K€"
+
+        Sinon salaireTotal <- salaireBase
+                Ecrire "Voila le salaire de base"
+        Fin Si
+Fin
+          
+Corrigé
+

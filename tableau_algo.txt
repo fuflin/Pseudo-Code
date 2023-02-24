@@ -1,0 +1,464 @@
+Exo 1 
+
+Ecrire un algorithmequi déclare et remplisse un tableau de 7 valeurs numériques en les mettant toutes à zero.
+
+    tableau tab[6] en entier
+    var i e entier
+
+    Début
+
+        Pour (i <-0 a 6) 
+        Alors tab[i] <- 0
+        i++
+    Fin
+
+--------------------------------------------------------------------------------
+
+Exo 2 
+
+Ecrire un algorithme qui déclare et remplisse un tableau contenant les six voyelles de l'alphabet latin
+
+    tableau voy[5] en string
+    var voyelle en string
+    var i en entier
+
+    Début 
+    voyelle <- ""
+
+        Pour (i <- 0; i <- 0 à 5; i++) 
+            Ecrire "Donnez une voyelle en latin"
+            Lire voyelle 
+            voy[i] <- voyelle
+        Fin Pour
+
+    Fin
+
+Corrigé
+
+    tableau voyelles[5] en string
+
+    Début
+
+        voyelles[0] <- "A"
+        voyelles[1] <- "E"
+        voyelles[2] <- "I"
+        voyelles[3] <- "O"
+        voyelles[4] <- "U"
+        voyelles[5] <- "Y"
+
+    Fin
+
+--------------------------------------------------------------------------------
+
+Exo 3
+
+Ecrire un algorithme qui déclare un tableau de 9 notes, dont on fait ensuite saisir les valeurs par l'utilisateur
+
+    tableau notes[8] en numérique
+    var note en numérique
+    var i en entier
+
+    Début
+    note <- ""
+
+        Pour (i <-0; i <- 0 à 8; i++) Alors
+            Ecrire "Donnez une note"
+            Lire note
+            notes[i] <- note
+        Fin Pour
+
+    Fin
+
+Corrigé
+
+    tableau notes[8]
+    var i en entier
+
+    Début
+
+        Pour i <- 0 à 8
+            Ecrire "Donnez une note"
+            Lire notes[i]
+        i++
+
+    Fin
+
+--------------------------------------------------------------------------------
+
+Exo 4
+
+Que produit l'algorithme suivant?
+
+    tableau Nb[5] en entier
+    Variable i en entier
+
+    Début 
+
+        Pour i <- 0 à 5
+            Nb[i] <- i*i
+            i suivant
+        Pour i <- 0 à 5
+            Ecrire Nb[i]
+            i suivant
+
+    Fin
+
+L'algorithme donnerai ce résultat pour le tableau [0, 1, 4, 9, 16, 25]
+on obitens le carré de la valeur de l'index
+
+Version simplifier
+
+    Début   
+
+        Pour i <- 0 à 5
+            Nb[i] <- i*i
+            Ecrire Nb[i]
+        i++
+
+    Fin
+
+--------------------------------------------------------------------------------
+
+Exo 5 
+
+Que produit l'algorithme suivant?
+
+    tableau N[6] en entier
+    variable i, k en entier
+
+    Début
+
+        N[0] <- 1
+        Pour k <- 1 à 6
+            N[k] <- N[k-1] + 2  (N[1] <- N[1-1] + 2)
+            k suivant
+        Pour i <- 0 à 6
+            Ecrire N[i]
+            i suivant
+
+    Fin
+
+L'algorithme nous permet de compté 2 par 2 
+
+Version simplifier de l'algorithme
+
+    Début
+
+        N[0] <- 1
+        Pour k <- 1 à 6
+            N[k] <- N[k-1] + 2  (N[1] <- N[1-1] + 2)
+            k suivant
+
+    Fin
+
+--------------------------------------------------------------------------------
+
+Exo 6
+
+Que produit l'algorithme suivant?
+
+    tableau suite[7] en entier
+    var i en entier
+
+    Début   
+
+        suite[0] <- 1
+        suite[1] <- 1
+        Pour (i <- 2 à 7)
+            suite[i] <- suite[i-1] + suite[i-2]
+            i suivant
+        Pour (i <- 0 à 7)
+            Ecrire suite[i]
+            i suivant
+
+    Fin
+
+un algorithme qui additionne avec la valeur précedente
+suite [1, 1, 2, 3, 5, 8, 13, 21]
+
+--------------------------------------------------------------------------------
+
+Exo 7
+
+Ecrire la fin de l'algorithme de l'exo 3 afin que le calcul de la moyenne des notes soit effectués et affiché à l'écran
+
+    tableau notes[8] en numérique
+    var note en numérique
+    var moy en numérique
+    var somme en numérique
+    var i en entier
+
+    Début
+    note <- ""
+    somme <- 0
+    moy <- 0
+
+        Pour (i <-0; i <- 0 à 8; i++) Alors
+            Ecrire "Donnez une note"
+            Lire note
+            notes[i] <- note
+            somme <- somme + notes[i]
+        Fin Pour
+        moy <- (somme/9)
+        Ecrire "la moyenne des notes est de" moy
+
+    Fin    
+
+---------------------------------------------------------------------------------
+
+Exo 8
+
+Ecrivez un algorithme permettant à l'utilisateur de saisir un nombre quelconque de valurs, qui devront être stockées dans un tableau. L'utilisateur doit donc commencer par entrer le nombre de valeurs qu'il compte saisir. Il effectuera ensuite cette saisie. Enfin, une fois la saisie terminée, le programme affichera le nombre de valeurs négatives et le nombre de valeurs négatives.
+
+    var qtt en entier (quantité de valeurs saisie)
+    tab val[] (tableau pour stocké les valeurs)
+    var nbPos en entier (nombre positif)
+    var nbNeg en entier (nombre négatif)
+    var valeur en numérique (valeur à saisir)
+
+    Début
+    qtt <- 0
+    nbPos <- 0
+    nbNeg <- 0
+
+        Ecrire "Donnez un nombre de valeurs"
+        Lire qtt
+
+    Redim val[qtt-1]
+
+        Pour i <- 0 à (qtt-1)
+            Ecrire "Donnez une valeur"
+            Lire valeur
+            val[i] <- valeur
+        i++
+
+        Pour i <- 0 à val[qtt-1] Alors
+            Si (val[i]<0) Alors
+                nbNeg <- nbNeg + 1
+            Sinon Si (val[i]>0) Alors
+                nbPos <- nbPos + 1
+            Fin Si
+        Fin Pour
+
+        Ecrire "Le nombre de valeurs positives est de" nbPos
+        Ecrire "Le nombre de valeurs négatives est de" nbNeg
+
+    Fin
+
+Corrigé
+
+    Début 
+
+        Ecrire "Donnez une quantité"
+        Lire qtt
+
+        nbPos <- 0 
+        nbNeg <- 0
+        Redim val[qtt-1]
+
+        Pour (i <- 0 à (qtt-1))
+
+            Ecrire "Donnez un nombre"
+                val[i]
+                Si val[i] > 0 Alors 
+                    nbPos ++
+                Sinon Si val[i] < 0 
+                    nbNeg ++
+                Fin Si
+        i++
+
+        Ecrire " il y a" nbPos "nombres positif et" nbNeg "nombres négatifs"
+
+    Fin
+
+---------------------------------------------------------------------------------
+
+Exo 9
+
+Ecrivez un algorithme calculant la somme des valeurs d'un tableau (on suppose que le tableau a été préalablement saisi).
+
+    var qtt en entier (nombre de valeurs dans le tableau)
+    tableau valeurs[]
+    var i en entier
+    var somme en numérique
+
+    Début 
+
+    Redim valeurs[qtt-1]
+    somme <- 0
+
+        Pour i <- 0 à (qtt-1) Alors
+            somme <- somme + valeurs[i]
+        i++
+
+    Fin
+
+---------------------------------------------------------------------------------
+
+Exo 10
+
+Ecrivez un algorithme constituant un tableau, à partir de 2 tableaux de même longueur préalablement saisis. Le nouveau tableau sera la somme des éléments des 2 tableaux de départ.
+
+    Tableau 1               Tableau 2
+[4,8,7,9,1,5,4,6]       [7,6,5,2,1,3,7,4]
+
+            Tableau à constituer:
+            [11,14,12,11,2,8,11,10]
+
+    tableaux tab1[], tab2[], tabsomme[] en entier
+    var N en entier
+    var i en entier
+
+    
+
+    Début
+
+    redim tab1[N-1]
+    redim tab2[N-1]
+    redim tabsomme[N-1]
+
+        Pour i <- 0 à (N-1)
+
+            tabsomme[i] <- tab1[i] + tab2[i]
+        i++
+
+    Fin
+
+---------------------------------------------------------------------------------
+
+Exo 11 
+
+Toujours à partir de 2 tableaux précédemment saisis, écrivez un algorithme qui calcul le schtroupf des 2 tableaux. Pour calculer le schtroumpf, il fait multiplier chaque élément du tableau 1 par chaque élément du tableau 2, et additionner le tout.
+
+    tableaux tab1[], tab2[] en numérique
+    var N, M en entier
+    var i, j en entier
+    var somme en numérique
+
+    Début
+
+        Ecrire "Donnez un nombre de valeurs pour le tableau 1"
+        Lire N
+
+        Ecrire "Donnez un nombre de valeurs pour le tableau 2"
+        Lire M
+
+    redim tab1[N-1]
+    redim tab2[M-1]
+
+    somme <-0
+
+        Pour i <- 0 à (N-1)
+            Pour j <- 0 à (M-1)
+                somme <- somme + (tab1[i] * tab2[j])
+            j++
+        i++
+
+    Fin
+---------------------------------------------------------------------------------
+
+Exo 12
+
+Ecrivez un algorithme qui permette la saisie d'un nombre quelconque de valeurs, sur le principe de l'ex . Toutes les valeurs doivent ensuite augmentées de 1, et le nouveau tableau sera affiché à l'écran.
+
+    var i en entier
+    tab valeurs[] en numérique
+    var qtt en numérique
+
+        Début 
+
+            Ecrire "Donnez une quantité"
+            Lire qtt
+
+            Redim valeurs[qtt-1]
+
+            Pour (i <- 0 à (qtt-1))
+                Ecrire "Donnez un nombre"
+                    valeurs[i]       
+            i++
+
+            Pour (i <- 0 à (qtt-1))
+                valeurs[i] <- valeurs[i] + 1
+                Ecrire val[i]
+            i++
+
+        Fin
+
+---------------------------------------------------------------------------------
+
+Exo 13
+
+Ecrire un algorithme permerttant, toujours sur le même principe, à l'utilisateur de saisir un nombre déterminé de valeurs. Le programme, une fois la saisie terminée, renvoie la plus grande valeur en précisant quelle position elle occupe dans le tableau. On prendra soin d'effectuer la saisie dans un premier temps, et la recherche de la plus grande valeur du tableau dans un second temps.
+
+    tableau valeurs[] en numérique 
+    var i en entier
+    var nbMax en numérique
+    var qtt en entier 
+    var position en entier
+    var nombre en numérique
+
+        Début
+
+            Ecrire "Donnez un nombre de valeurs"
+            Lire qtt
+
+            redim valeurs[qtt-1]
+            nbMax <- 0
+            position <- 0 
+
+            Pour (i <- 0 à (qtt-1))
+                Ecrire "Donnez un nombre"
+                Lire nombre
+                valeurs[i] <- nombre
+
+                Si (nombre > nbMax) Alors
+                    nbMax <- nombre
+                    position <- i 
+                Fin Si
+            i++
+
+            Ecrire "le nombre le plus grand du tableau est:" nbMax
+
+        Fin
+
+---------------------------------------------------------------------------------
+
+Exo 14
+
+Toujours et encore sur le même principe, écrivez un algorithme permerttant, à l'utilisateur de saisir les notes d'une classe. Le programme, une fois la saisie terminée, renvoie le nombre de ces notes supérieurs à la moyenne de la classe.
+
+    tableau notes[] en numérique
+    var val en numérique
+    var somme en numérique
+    var moy en numérique
+
+    Début
+
+        Ecrire "Donnez un nombre"
+        lire valeur
+
+        redim notes[val-1]
+
+            Pour (i <- 0 à (val-1))
+                Ecrire "donnez une note"
+                Lire notes[i]
+            i++
+
+        somme <- 0
+
+            Pour (i <- 0 à (qtt-1))
+                somme <- somme + notes[i]
+            i++
+        
+        moy <- somme / val
+
+        notesSupMoyenne <- 0
+
+            Pour (i <- 0 à (qtt-1))
+                Si notes[i] > moy Alors
+                notesSupMoyenne <- notesSupMoyenne + 1
+            i++
+
+        Ecrire " il y a " notesSupMoyenne "notes supérieur à" moy
+
+    Fin
