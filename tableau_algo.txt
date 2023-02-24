@@ -1,4 +1,4 @@
-Exo 1 
+Exo 1 :
 
 Ecrire un algorithmequi déclare et remplisse un tableau de 7 valeurs numériques en les mettant toutes à zero.
 
@@ -14,7 +14,7 @@ Ecrire un algorithmequi déclare et remplisse un tableau de 7 valeurs numérique
 
 --------------------------------------------------------------------------------
 
-Exo 2 
+Exo 2 :
 
 Ecrire un algorithme qui déclare et remplisse un tableau contenant les six voyelles de l'alphabet latin
 
@@ -50,7 +50,7 @@ Corrigé
 
 --------------------------------------------------------------------------------
 
-Exo 3
+Exo 3 :
 
 Ecrire un algorithme qui déclare un tableau de 9 notes, dont on fait ensuite saisir les valeurs par l'utilisateur
 
@@ -85,7 +85,7 @@ Corrigé
 
 --------------------------------------------------------------------------------
 
-Exo 4
+Exo 4 : 
 
 Que produit l'algorithme suivant?
 
@@ -119,7 +119,7 @@ Version simplifier
 
 --------------------------------------------------------------------------------
 
-Exo 5 
+Exo 5 :
 
 Que produit l'algorithme suivant?
 
@@ -153,7 +153,7 @@ Version simplifier de l'algorithme
 
 --------------------------------------------------------------------------------
 
-Exo 6
+Exo 6 :
 
 Que produit l'algorithme suivant?
 
@@ -178,7 +178,7 @@ suite [1, 1, 2, 3, 5, 8, 13, 21]
 
 --------------------------------------------------------------------------------
 
-Exo 7
+Exo 7 :
 
 Ecrire la fin de l'algorithme de l'exo 3 afin que le calcul de la moyenne des notes soit effectués et affiché à l'écran
 
@@ -206,7 +206,7 @@ Ecrire la fin de l'algorithme de l'exo 3 afin que le calcul de la moyenne des no
 
 ---------------------------------------------------------------------------------
 
-Exo 8
+Exo 8 :
 
 Ecrivez un algorithme permettant à l'utilisateur de saisir un nombre quelconque de valurs, qui devront être stockées dans un tableau. L'utilisateur doit donc commencer par entrer le nombre de valeurs qu'il compte saisir. Il effectuera ensuite cette saisie. Enfin, une fois la saisie terminée, le programme affichera le nombre de valeurs négatives et le nombre de valeurs négatives.
 
@@ -273,7 +273,7 @@ Corrigé
 
 ---------------------------------------------------------------------------------
 
-Exo 9
+Exo 9 :
 
 Ecrivez un algorithme calculant la somme des valeurs d'un tableau (on suppose que le tableau a été préalablement saisi).
 
@@ -295,7 +295,7 @@ Ecrivez un algorithme calculant la somme des valeurs d'un tableau (on suppose qu
 
 ---------------------------------------------------------------------------------
 
-Exo 10
+Exo 10 :
 
 Ecrivez un algorithme constituant un tableau, à partir de 2 tableaux de même longueur préalablement saisis. Le nouveau tableau sera la somme des éléments des 2 tableaux de départ.
 
@@ -326,7 +326,7 @@ Ecrivez un algorithme constituant un tableau, à partir de 2 tableaux de même l
 
 ---------------------------------------------------------------------------------
 
-Exo 11 
+Exo 11 :
 
 Toujours à partir de 2 tableaux précédemment saisis, écrivez un algorithme qui calcul le schtroupf des 2 tableaux. Pour calculer le schtroumpf, il fait multiplier chaque élément du tableau 1 par chaque élément du tableau 2, et additionner le tout.
 
@@ -357,7 +357,7 @@ Toujours à partir de 2 tableaux précédemment saisis, écrivez un algorithme q
     Fin
 ---------------------------------------------------------------------------------
 
-Exo 12
+Exo 12 :
 
 Ecrivez un algorithme qui permette la saisie d'un nombre quelconque de valeurs, sur le principe de l'ex . Toutes les valeurs doivent ensuite augmentées de 1, et le nouveau tableau sera affiché à l'écran.
 
@@ -386,7 +386,7 @@ Ecrivez un algorithme qui permette la saisie d'un nombre quelconque de valeurs, 
 
 ---------------------------------------------------------------------------------
 
-Exo 13
+Exo 13 :
 
 Ecrire un algorithme permerttant, toujours sur le même principe, à l'utilisateur de saisir un nombre déterminé de valeurs. Le programme, une fois la saisie terminée, renvoie la plus grande valeur en précisant quelle position elle occupe dans le tableau. On prendra soin d'effectuer la saisie dans un premier temps, et la recherche de la plus grande valeur du tableau dans un second temps.
 
@@ -423,7 +423,7 @@ Ecrire un algorithme permerttant, toujours sur le même principe, à l'utilisate
 
 ---------------------------------------------------------------------------------
 
-Exo 14
+Exo 14 :
 
 Toujours et encore sur le même principe, écrivez un algorithme permerttant, à l'utilisateur de saisir les notes d'une classe. Le programme, une fois la saisie terminée, renvoie le nombre de ces notes supérieurs à la moyenne de la classe.
 

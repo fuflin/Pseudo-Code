@@ -1,4 +1,4 @@
-Problématique: 
+Problématique:
 
     Afficher le montant brut, la remise, les frais de livraisons, le montant Net HT, le montant de la TVA, le montant TTC et le montant NET à payer connaissant la quantité, le prix unitaire, le taux de remise, les frais de livraison suivant le code de livraison et le taux de TVA.
 
